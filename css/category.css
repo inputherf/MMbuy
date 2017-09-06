@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input {
+  resize: none;
+  border: none;
+  outline: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: black;
+  background-color: #fff;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/font1/iconfont.eot');
+  src: url('../fonts/font1/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font1/iconfont.woff') format('woff'), url('../fonts/font1/iconfont.ttf') format('truetype'), url('../fonts/font1/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.category {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.category .cate_main {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+.category .cate_main .cate_title > li {
+  background-color: #ededed;
+}
+.category .cate_main .cate_title > li .big_pro {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+  text-indent: 1rem;
+  font-weight: 700;
+  border-bottom: 1px solid #cccccc;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+}
+.category .cate_main .cate_title > li .cate_content {
+  background-color: #f9f9f9;
+  zoom: 1;
+  display: none;
+}
+.category .cate_main .cate_title > li .cate_content:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.category .cate_main .cate_title > li .cate_content .show {
+  display: block !important;
+}
+.category .cate_main .cate_title > li .cate_content > li {
+  float: left;
+  width: 33.333333%;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+.category .cate_main .cate_title > li .cate_content:nth-child(3n) {
+  border-right: none;
+}

@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input {
+  resize: none;
+  border: none;
+  outline: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: black;
+  background-color: #fff;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/font1/iconfont.eot');
+  src: url('../fonts/font1/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font1/iconfont.woff') format('woff'), url('../fonts/font1/iconfont.ttf') format('truetype'), url('../fonts/font1/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.money_pro .cu_content {
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.money_pro .cu_content h3 {
+  font-size: 18px;
+  margin: 10px auto 5px;
+  font-weight: 700;
+  text-align: left;
+  word-break: break-all;
+  color: #5a5a5a;
+  line-height: normal;
+}
+.money_pro .cu_content .info {
+  margin: 12px auto;
+  color: #999999;
+  font-size: 12px;
+  line-height: 24px;
+}
+.money_pro .cu_content .info span {
+  margin: 0 4px;
+}
+.money_pro .cu_content .content {
+  zoom: 1;
+}
+.money_pro .cu_content .content:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.money_pro .cu_content .content .picwrap {
+  width: 120px;
+  float: right;
+  overflow: hidden;
+  margin: 12px auto auto 10px;
+}
+.money_pro .cu_content .content .conn {
+  font-size: 16px;
+  padding-bottom: 20px;
+  color: #606060;
+}
+.money_pro .cu_content .content .conn p {
+  line-height: 24px;
+  margin: 6px auto;
+}
+.money_pro .cu_content .center {
+  width: 100%;
+  box-sizing: border-box;
+}
+.money_pro .cu_content .center .area {
+  margin: 0 auto;
+  width: 174px;
+  padding: 0 16px;
+  border: 1px solid #cccccc;
+  border-top: none;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.money_pro .cu_content .center .area li {
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+}
+.money_pro .cu_content .center .area li a {
+  display: block !important;
+  border-bottom: 1px dashed #cccccc;
+}
+.money_pro .cu_content .center .area li a span {
+  margin-left: 10px;
+}
+.money_pro .cu_content .center .area li a span strong {
+  float: right;
+  margin-right: 10px;
+  color: #f27b04;
+}
+.money_pro .cu_content .golink > a {
+  display: block !important;
+  margin: 20px 10px;
+  background-color: #ff841d;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+.money_pro .cu_pic img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+.money_pro .cu_say {
+  margin-bottom: 20px;
+}
+.money_pro .cu_say .cu-content-pl .tit {
+  font-size: 16px;
+  padding: 6px 8px;
+  margin-top: 10px;
+}
+.money_pro .cu_say .cu-content-pl .reply {
+  padding: 6px 8px;
+}
+.money_pro .cu_say .cu-content-pl .reply .form {
+  border: 2px solid #eceae8;
+  border-radius: 2px;
+  padding: 4px 0 0 4px;
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+}
+.money_pro .cu_say .cu-content-pl .reply .form textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  color: #666666;
+  height: 68px;
+  overflow: hidden;
+}
+.money_pro .cu_say .cu-content-pl .reply .form .ctrl {
+  height: 36px;
+  margin-left: -4px;
+  border-top: 1px solid #f2f2f2;
+}
+.money_pro .cu_say .cu-content-pl .reply .form .ctrl input {
+  font-size: 16px;
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  background-color: #ff841d;
+  border: 2px solid #ff841d;
+  border-left: none;
+  border-top: none;
+  width: 100px;
+  height: 39px;
+  color: white;
+  outline: none;
+  border-radius: 0 0 2px 0;
+}
+.money_pro .cu_say .cu-content-pl .list ul li {
+  padding: 18px 10px;
+  background-color: #fff;
+}
+.money_pro .cu_say .cu-content-pl .list .userimg {
+  width: 40px;
+  float: left;
+  overflow: hidden;
+}
+.money_pro .cu_say .cu-content-pl .list .userimg img {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-position: top;
+}
+.money_pro .cu_say .cu-content-pl .list .con {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.money_pro .cu_say .cu-content-pl .list .con .name {
+  margin-bottom: 6px;
+  color: #2e8b01;
+  font-size: 14px;
+  zoom: 1;
+}
+.money_pro .cu_say .cu-content-pl .list .con .name:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.money_pro .cu_say .cu-content-pl .list .con .name .username {
+  color: #5997c0;
+  font-size: 13px;
+  float: left;
+}
+.money_pro .cu_say .cu-content-pl .list .con .name .time {
+  color: #999;
+  font-size: 13px;
+  float: right;
+}
+.money_pro .cu_say .cu-content-pl .list .con .content {
+  font-size: 15px;
+  line-height: 20px;
+  color: #606060;
+}
+.money_pro .cu_say .cu-content-pl .list .con .content img {
+  width: 22px;
+  height: 22px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header class="head"  id="header">
+    <div class="back">
+        <a href="index.html"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'></path></svg></a>
+    </div>
+    <div class="header_app">
+        <a href="javascriptl:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <h1>
+        凑单品
+    </h1>
+</header>
+<!--主体部分-->
+<main class="gs-pro">
+    <div class="hd">
+        <div class="searchbtn">
+            <div class="icon"></div>
+        </div>
+        <div class="left">
+            <ul>
+                <li class="one">
+                    <a href="javascript:;" data-id="0">
+                       <span>京东</span>
+                        <i></i>
+                    </a>
+                </li>
+                <li class="two">
+                    <a href="javascript:;" data-id="0">
+                       <span>华北</span>
+                        <i></i>
+                    </a>
+                </li><li class="three">
+                    <a href="javascript:;" data-id="0">
+                      <span>全部价格</span>
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 下拉菜单-->
+        <div class="popsort" id="shop">
+            <ul class="shop">
+                <script id="popsort" type="text/html">
+                    {{each result as value i}}
+                    <li data-id="{{value.shopId}}"><a href="javascript:;" data-name="{{value.shopName}}">{{value.shopName}}<i></i></a></li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+        <div class="popcat " id="area">
+            <ul class="area">
+                <script id="area_pop" type="text/html">
+                    {{each result as value i}}
+                    <li data-area="{{value.areaId}}"><a href="javascript:;" data-m-name="{{value.areaName}}">{{value.areaName}}
+                        <i></i></a></li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+        <div class="popprice" id="price">
+            <ul class="all">
+                <li><a href="#" >全部价格<i></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bd">
+        <ul class="bdwrap">
+            <script id="bd-wrap" type="text/html">
+                {{each result as value i}}
+                <li>
+                    <a href="http://item.m.jd.com/ware/view.action?wareId=1274360">
+                        <div class="pic">
+                            <img src="{{value.productImg}}" alt=""/>
+                        </div>
+                        <div class="title">
+                           {{value.productName}}
+                        </div>
+                        <div class="other">
+                            <div class="price">{{value.productPrice}}</div>
+                            <div class="btn">去凑单</div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </script>
+
+            <!--<li>-->
+                <!--<a href="http://item.m.jd.com/ware/view.action?wareId=1274360">-->
+                   <!--<div class="pic">-->
+                       <!--<img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg"-->
+                            <!--alt=""/>-->
+                   <!--</div>-->
+                    <!--<div class="title">-->
+                        <!--廿一客(21cake)专用餐具 1人份(不单独配送)-->
+                    <!--</div>-->
+                    <!--<div class="other">-->
+                        <!--<div class="price">¥0.50</div>-->
+                        <!--<div class="btn">去凑单</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</main>
+<!--底部-->
+<footer class="footer">
+    <div class="foot_login">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#header-m"><img src="images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="foot_down">
+        <p><a href="javascript:;" class="red_a">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>-- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

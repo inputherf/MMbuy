@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/discount.css"/>
+    <!--<link rel="stylesheet" href="css/moneyproduct.css"/>-->
+</head>
+<body>
+<!--头部-->
+<header class="head" id="header">
+    <div class="back">
+        <a href="inlanddiscount.html"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'></path></svg></a>
+    </div>
+    <div class="header_app">
+        <a href="javascriptl:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <h1>
+        国内折扣
+    </h1>
+</header>
+
+<!--主体-->
+<main class="money_pro">
+    <div class="cu_content">
+        <script type="text/html" id="cu_d">
+            {{each result as value i}}
+            <h3 class="title">
+                {{value.productName}}
+        </h3>
+        <div class="info">
+            <span class="mall">
+                {{value.productFrom}}
+            </span>
+            <span class="add_time">
+                {{value.productTime}}
+            </span>
+            <span class="author">
+                {{value.productTips}}
+            </span>
+        </div>
+        <div class="content">
+            <div class="picwrap">
+                {{#value.productImg}}
+            </div>
+            <div class="conn">
+                <p>
+                    {{value.productInfo}}
+                </p>
+                <p></p>
+                <!--<p>-->
+                    <!--{{value.productInfo1}}-->
+                <!--</p>-->
+                <p></p>
+                <p class="p_w">
+                    {{#value.productImg}}
+                </p>
+                <p></p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="area">
+                {{#value.productCity}}
+            </div>
+        </div>
+        <div class="golink">
+            <a href="">
+                <i>前往购买</i>
+            </a>
+        </div>
+    </div>
+    <div class="cu_pic">
+        <img src="images/mmbweixin2.png" alt=""/>
+    </div>
+    <div class="cu_say">
+        {{#value.productComment}}
+    </div>
+            {{/each}}
+        </script>
+</main>
+<!--底部-->
+<footer class="footer">
+    <div class="foot_login">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#header"><img src="images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="foot_down">
+        <p><a href="javascript:;" class="red_a">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>-- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/discount.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url(common.less);
+//导航栏
+.bj_list{
+  //height: 38px;
+  border: 1px solid #cccccc;
+  line-height: 38px;
+  background-color: #ebebeb;
+  font-size: 27/40rem;
+  text-indent: 1rem;
+  background: linear-gradient(to bottom,#ffffff,#ebebeb);
+  .bj_select{
+    .fr();
+    margin-right: 15px;
+    width: 124/40rem;
+    height: 27px;
+    margin-top: 5px;
+    line-height: 27px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #a9a9a9;
+    border-bottom: 1px solid #cccccc;
+    background: linear-gradient(to bottom,#dbdbdb,#fafafa,);
+  }
+}
+//宝贝详情
+.pro_bijia{
+  box-sizing: border-box;
+  position: relative;
+  .pro_name{
+      font-size: 34/40rem;
+      text-align: center;
+      height: 200px;
+      width: 90%;
+      margin: 0 auto;
+    margin-top: 16px;
+  }
+  .bj_img{
+    height: 170px;
+    width: 170px;
+    .db();
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bj_collect{
+    .fr();
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: 24px;
+    bottom:55px;
+  }
+  .tab{
+    .clearfix();
+    width: 100%;
+    font-size: 15px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #ffbb00;
+    background: linear-gradient(to top,#ffd050,#ffbb00);
+    border-top: 1px solid #c14d00;
+    border-bottom: 1px solid #c14d00;
+    overflow: hidden;
+    ul{
+      .clearfix();
+    li{
+      .w33();
+      box-sizing: border-box;
+      .fl();
+      height: 34px;
+      text-align: center;
+      border-right: 1px solid #c14d00;
+      &:last-child{
+        border-right: none;
+      }
+      a{
+        color: white;
+      }
+      >.cur{
+        background-color: #ff9900;
+      }
+      .mtab{
+        .db();
+
+       }
+     }
+    }
+  }
+}
+//京东商城
+.bijia_jd{
+  table{
+    border-bottom: 1px solid #bbbbbb;
+    tr{
+    td{
+      line-height: 22px;
+    }
+&:first-child{
+  .p_pic{
+    width: 20px;
+    text-align: center;
+    img{
+      margin-top: 4px;
+      margin-left: 10/40rem;
+      margin-right: 0.2rem;
+      width: 16px;
+      height: 16px;
+        }
+      }
+  td{
+    &:nth-child(2){
+      margin-left: 5px;
+      a{
+        font-size: 16px;
+      }
+    }
+    &:nth-child(3){
+      text-align: right;
+      color: #d10311;
+      padding-right: 15px;
+      font-size: 16px;
+    }
+  }
+    }
+   }
+ }
+}
+.note{
+  font-size: 12px;
+  color: #888;
+  padding: 8px 10px;
+  line-height: 18px;
+}
+.pro_com_title{
+  border-top: 4px solid #7a7a7a;
+  margin-top: 5px;
+  >div{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #dbdbdb;
+    font-size: 14px;
+    border-top: 1px solid #ffffff;
+  }
+}
+.clearfix{
+  .clearfix();
+}
+.pro_com_list{
+  ul{
+    li{
+      font-size: 12px;
+      color: #666;
+      padding: 10px;
+      padding-bottom: 0px;
+      line-height: 18px;
+      margin-top: 3px;
+      border-bottom:1px solid #ccc;
+    .com_name{
+      .fl();
+    }
+    .com_time{
+      .fr();
+    }
+      .com_form{
+      .fr();
+      }
+      .com_content{
+        color: #000000;
+        line-height: 22px;
+        padding-top: 5px;
+      }
+    }
+  }
+  .more{
+    padding: 0 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .morein{
+      .db();
+      height: 32px;
+      background-color: #d4d4d4;
+      background: linear-gradient(to bottom,#f1f1f1,#d4d4d4);
+      border-bottom: 1px solid #bababa;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 0 1px #666;
+      line-height: 32px;
+      font-size: 14px;
+      overflow: hidden;
+    }
+  }
+}

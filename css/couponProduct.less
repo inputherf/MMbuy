@@ -1,0 +1,126 @@
+@import url(base.less);
+//头部
+.head {
+  background-color: #f4483e;
+  color: white;
+  height: 44px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  > .back {
+    width: 50px;
+    text-align: center;
+    .fl();
+    margin-top: 13px;
+  }
+  > h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 7px;
+  }
+  > .header_app {
+    height: 100%;
+    .fr();
+    padding-top: 6px;
+    width: 34px;
+    margin-right: 7.5px;
+  }
+}
+//主体
+main{
+  .yhq{
+    font-size: 12px;
+    text-align: center;
+    color: #999999;
+    margin: 8px 0;
+  }
+  .coupon_list{
+    >ul{
+      .clearfix();
+      li{
+        border-bottom: 1px solid #e7e7e7;
+        background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'><path fill='#999999' d='M746.255255 299.653099 746.33098 299.728824 713.12674 332.933063 713.049992 332.857339 297.859875 748.048479 264.635169 714.82275 679.816077 299.642866 264.635169-115.538041 297.859875-148.762747 713.00906 266.386438 713.085808 266.30969 746.341213 299.567141Z' transform='translate(0, 812) scale(1, -1)'/></svg>") right center no-repeat;
+        position: relative;
+        background-size: 20px 20px;
+        overflow: hidden;
+        a {
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          padding: 10px;
+          .pic {
+            width: 100px;
+            height: 80px;
+            overflow: hidden;
+            .fl();
+            margin-right: 10px;
+            img {
+             max-width: 100px;
+             height: auto;
+            }
+          }
+          .info{
+            padding-right: 30px;
+            overflow: hidden;
+            .tit{
+              h3{
+                text-align: justify;
+                font-size: 14px;
+                font-weight: 400;
+                color: #333;
+                line-height: 20px;
+              }
+            }
+            .time{
+              font-size: 12px;
+              color: #ee7700;
+              margin-top: 10px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+//底部
+.footer {
+  margin-top: 25px;
+  background-color: #efefef;
+  .foot_login {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    .clearfix();
+    font-size: 14px;
+    a {
+      //display: block;
+      float: left;
+      line-height: 34px;
+      text-align: center;
+      width: 30%;
+      border-right: 1px solid #cccccc;
+    }
+    a:last-child {
+      width: 40%;
+      text-align: center;
+      .fl();
+      border: none;
+      img {
+        margin-top: 8px;
+        display: inline-block;
+        width: 15px;
+      }
+    }
+  }
+  .foot_down {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    padding: 15px 0;
+    .red_a {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import url(common.less);
+//导航栏
+.pro_list{
+  //height: 38px;
+  border: 1px solid #cccccc;
+  line-height: 38px;
+  background-color: #ebebeb;
+  font-size: 27/40rem;
+  text-indent: 1rem;
+  background: linear-gradient(to bottom,#ffffff,#ebebeb);
+  .select{
+    .fr();
+    margin-right: 15px;
+    width: 124/40rem;
+    height: 27px;
+    margin-top: 5px;
+    line-height: 27px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #a9a9a9;
+    border-bottom: 1px solid #cccccc;
+    background: linear-gradient(to bottom,#dbdbdb,#fafafa,);
+  }
+}
+//商品列表
+.pro{
+    .product_list{
+      li{
+        border-bottom: 1px solid #cccccc;
+        padding: 14px 8px;
+        position: relative;
+        .clearfix();
+        .product_img{
+          width: 100px;
+          height: 100px;
+          .fl();
+        }
+        .product_info{
+          margin-left: 110px;
+          .tit{
+            font-size: 27/40rem;
+            line-height: 19px;
+            min-height: 44px;
+          }
+          .price{
+           height: 25px;
+           margin-top: 4px;
+           em{
+              font-size: 17px;
+             //font-weight: 700;
+              color: red;
+              .fl();
+           }
+          }
+          .other{
+            color:#a1a1a1;
+            font-size: 12px;
+          em{
+            margin-right: 10px;
+          }
+          }
+        }
+      }
+    }
+    .page{
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      .clearfix();
+      span{
+        .fl();
+        .w33();
+        a{
+          font-size: 14px;
+          border-radius: 5px;
+          overflow: hidden;
+          padding: 8px 20px;
+          text-align: center;
+          line-height: 32px;
+          overflow: hidden;
+          box-sizing: border-box;
+          background-color: #d4d4d4;
+          border-bottom: 1px solid #bababa;
+          box-shadow: 0 0 1px #666;
+          background: linear-gradient(to bottom,#f1f1f1,#d4d4d4);
+        }
+        select{
+          height: 36px;
+          padding: 8px 15px;
+          font-size: 16px;
+          border: 1px solid #bababa;
+          outline: none;
+        }
+      }
+    }
+}
+.touming{
+  height:25px;
+  background-color: #f1f1f1;
+}

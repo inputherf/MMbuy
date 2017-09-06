@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/inlanddiscount.css"/>
+</head>
+<body>
+<!--头部-->
+<header class="head" id="header">
+    <div class="back">
+        <a href="index.html"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'></path></svg></a>
+    </div>
+    <div class="header_app">
+        <a href="javascriptl:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <h1>
+        国内折扣
+    </h1>
+</header>
+<main id="recommend_product">
+    <div class="cu_friend">
+            <script type="text/html" id="food_tit">
+                <ul>
+                    {{each result as value i}}
+                    <li class="bd_img">
+                        <a href="discount.html?productid={{value.productId}}">
+                            <div class="img">
+                                {{#value.productImg}}
+                            </div>
+                            <div class="title">
+                                {{value.productName}}
+                            </div>
+                            <div class="subtit">
+                                {{value.productPrice}}
+                            </div>
+                            <div class="info">
+                                <p class="mall">{{value.productFrom}} | {{value.productTime}}</p>
+                            </div>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </script>
+
+    </div>
+</main>
+<!--底部-->
+<footer class="footer">
+    <div class="foot_login">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#header"><img src="images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="foot_down">
+        <p><a href="javascript:;" class="red_a">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>-- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+
+<!--加载进度条-->
+<div class="loading">
+    <img src="images/35.gif" alt=""/>
+</div>
+
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/inlanddiscount.js"></script>
+</body>
+</html>

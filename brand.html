@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/brand.css"/>
+</head>
+<body>
+<!--头部logo区域-->
+<header id="header" class="header">
+    <div class="header_logo" id="header-m">
+        <a href="index.html">
+            <img src="images/header_logo.png" alt=""/>
+        </a>
+    </div>
+    <div class="header_app">
+        <a href="javascriptl:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+
+</header>
+<!--头部搜索框-->
+<section id="header_search">
+    <form action="#" class="form_search">
+        <input type="button" value="搜索"/>
+
+        <div class="bijia">
+            <input type="search" placeholder="请输入你想比价的商品"/>
+        </div>
+    </form>
+</section>
+<!--主体-->
+<main class="category">
+    <!-- 导航栏-->
+    <nav class="pro_list">
+        <p><a href="index.html">首页></a><a href="category.html">全部分类></a>
+        </p>
+    </nav>
+    <div class="hd">
+        <h3>平板电视哪个牌子好</h3>
+    </div>
+    <div class="row">
+        <ul class="category-title">
+            <script id="tv" type="text/html">
+                {{each result as value i}}
+                <li>
+                    <em class="top1">{{i+1}}</em>
+                    <a href="productlist.html?categoryid={{value.categoryId}}&pageid=1">
+                        <div class="inner">
+                            <div class="tit">
+                                {{value.brandName}}
+                                <p>{{value.brandInfo}}</p>
+                            </div>
+                        </div>
+                    </a></li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+    <div class="hd">
+        <h3>
+            平板电视产品销量排行
+        </h3>
+    </div>
+    <div class="product-list">
+        <ul class="brand_list">
+            <script type="text/html" id="brand-list">
+                {{each result as value i}}
+                <li>
+                    <a href="bijia.html?productid={{value.productId}}" data-pro-id="{{value.productId}}">
+                        <div class="pic">
+                            {{#value.productImg}}
+                        </div>
+                        <div class="info">
+                            <div class="tit">
+                                {{value.productName}}
+                            </div>
+                            <div class="price">
+                                <em>{{value.productPrice}}</em>
+                           <span class="star">
+                               <em class="star5"></em>
+                           </span>
+                            </div>
+                            <div class="other">
+                                <em>{{value.productQuote}}</em>
+                                <em>{{value.productCom}}</em>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+    <div class="hd">
+        <h3>
+            平板电视最新评论
+        </h3>
+    </div>
+    <div class="pllist">
+        <ul class="pro-say">
+            <!--<li>-->
+            <!--<a href="bijia.aspx?id=211698">-->
+            <!--<div class="protit">-->
+            <!--<div class="pic">-->
+            <!--<img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg"-->
+            <!--alt=""/>-->
+            <!--</div>-->
+            <!--<div class="tit">-->
+            <!--乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="plbox">-->
+            <!--<div class="name">-->
+            <!--g***n：-->
+            <!--<span class="star">-->
+            <!--<em class="star5"></em>-->
+            <!--</span>-->
+            <!--<i>2016/2/18</i>-->
+            <!--</div>-->
+            <!--<div class="con">-->
+            <!--外观：精工细作，颜值再度提高作为一台55寸的大电视，乐视X55正面看起来非常大气，配合Letv独有的造型独特的云底座，整体视觉观感出色。会发光的Letv标识被放置在了机器的左下角，标识右侧，安排有一个圆形的遥控器信号接收区域。乐视X55的边框处理相当讲究，采用了时下智能手机产品上常见的倒角工艺，配合表面的金属拉丝，展现出产品细节上的用心。同时，乐视X55的正面屏幕边框也非常窄，正面边框与屏幕内部黑边的宽度总和近似等于一部普通智能手机的厚度。在成为会员之前，用户对所有高清视频拥有6分钟的试看时间。应用扩展方面，EUI5延续了超级电视一贯的风格，对于一台安卓系统的设备来说，系统中自带电视管家等应用可以进行内存清理等操作，方便实用。总结：超级电视的完善之作智能电视发展的日渐成熟，让智能电视产品本身越来越难以出现具有突破性的亮点，即使是有了超级之名的乐视TV，在实际的使用上，也并没什么真正让人眼前一亮的功能。此时乐视X55出现的意义，我们觉得是更像是对已经在行业占据领先位置的乐视TV的一次完善，出色的显示效果，更加精致的外观，回归实用的遥控器，配合软件上功能全面的EUI系统，乐视X55称的上市超级电视的完善之作。加油吧，京东-->
+            <!--评论发布自 购买自：京东商城-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--</li>-->
+            <script id="pro-id" type="text/html">
+                {{each result as value i}}
+                <li>
+                    <a href="javascript:;">
+                        <div class="protit">
+                        </div>
+
+                        <div class="plbox">
+                            <div class="name">
+                                {{value.comName}};
+                        <span class="star">
+                            <em class="star5"></em>
+                        </span>
+                                <i>{{value.comTime}}</i>
+                            </div>
+                            <div class="con">
+                                {{value.comContent}}
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </script>
+            <!-- 第二个模板-->
+
+        </ul>
+    </div>
+</main>
+<!--底部-->
+<footer class="footer">
+    <div class="foot_login">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#header-m"><img src="images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="foot_down">
+        <p><a href="javascript:;" class="red_a">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>-- 掌上比价平台
+        </p>
+
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

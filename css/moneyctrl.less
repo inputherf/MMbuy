@@ -1,0 +1,142 @@
+@import url(common.less);
+//头部
+.head{
+  background-color: @color;
+  color: white;
+  height: 44px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  >.back{
+    width: 50px;
+    text-align: center;
+    .fl();
+    margin-top: 13px;
+  }
+  >h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 7px;
+  }
+  >.header_app{
+    height: 100%;
+    .fr();
+    padding-top: 6px;
+    width: 34px;
+    margin-right: 7.5px;
+  }
+}
+//推荐商品
+#recommend_product{
+  li{
+    padding: 14px 8px;
+    position: relative;
+    .clearfix();
+  }
+  .pro_img{
+    width: 100px;
+    height: 100px;
+    .fl();
+  }
+  .pro_dec{
+    margin-left: 110px;
+    .title{
+      font-size: 15px;
+      line-height: 19px;
+      min-height: 57px;
+      >span{
+        color: #ff6c00;
+      }
+    }
+    .other{
+      margin-top: 5px;
+      width: 100%;
+      .fl();
+      color: #a1a1a1;
+      .font{
+        .fr();
+        line-height: 20px;
+        //font-size: 12px;
+        i{
+          width: 14px;
+          height: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .page{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .clearfix();
+    span{
+      .fl();
+      .w33();
+      a{
+        font-size: 14px;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 8px 20px;
+        text-align: center;
+        line-height: 32px;
+        overflow: hidden;
+        box-sizing: border-box;
+        background-color: #d4d4d4;
+        border-bottom: 1px solid #bababa;
+        box-shadow: 0 0 1px #666;
+        background: linear-gradient(to bottom,#f1f1f1,#d4d4d4);
+      }
+      select{
+        height: 36px;
+        padding: 8px 15px;
+        font-size: 16px;
+        border: 1px solid #bababa;
+        outline: none;
+      }
+    }
+  }
+}
+
+
+//底部
+.footer{
+  //margin-top: 25px;
+  background-color: #efefef;
+  .foot_login{
+    border-bottom:1px solid #cccccc;
+    border-top:1px solid #cccccc;
+    .clearfix();
+    font-size: 14px;
+    a{
+      //display: block;
+      float: left;
+      line-height: 34px;
+      text-align: center;
+      width: 30%;
+      border-right: 1px solid #cccccc;
+    }
+    a:last-child{
+      width: 40%;
+      text-align: center;
+      .fl();
+      border: none;
+      img{
+        margin-top: 8px;
+        display: inline-block;
+        width: 15px;
+      }
+    }
+  }
+  .foot_down{
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    padding: 15px 0;
+    .red_a{
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,502 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input {
+  resize: none;
+  border: none;
+  outline: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: black;
+  background-color: #fff;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/font1/iconfont.eot');
+  src: url('../fonts/font1/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font1/iconfont.woff') format('woff'), url('../fonts/font1/iconfont.ttf') format('truetype'), url('../fonts/font1/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+#header > .header_logo {
+  height: 100%;
+  margin-left: 15px;
+  float: left;
+  padding-top: 10px;
+  width: 185px;
+}
+#header > .header_app {
+  height: 100%;
+  float: right;
+  padding-top: 6px;
+  width: 34px;
+  margin-right: 7.5px;
+}
+#header_search {
+  height: 50px;
+  padding: 10px;
+  zoom: 1;
+}
+#header_search:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+#header_search .bijia {
+  margin-right: 75px;
+}
+#header_search .bijia input[type="search"] {
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  text-indent: 1em;
+}
+#header_search input[type="button"] {
+  width: 63px;
+  line-height: 30px;
+  float: right;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: white;
+}
+.touming {
+  height: 8.5px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+#header_menu {
+  padding: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#header_menu .row {
+  zoom: 1;
+}
+#header_menu .row:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+#header_menu .row > .menu_item {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+#header_menu .row > .menu_item img {
+  width: 50px;
+  margin: 0px auto;
+  margin-bottom: 5px;
+}
+#header_menu .row > .menu_item:nth-child(n+9) {
+  display: none;
+}
+#header_menu .hide {
+  display: none;
+}
+.list-title {
+  height: 35px;
+  background-color: #ff841d;
+  background: linear-gradient(to bottom, #ffaf47, #ff9000);
+  color: white;
+  line-height: 35px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.list-title img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+#recommend_product li {
+  border-bottom: 1px solid #cccccc;
+  padding: 14px 8px;
+  position: relative;
+  zoom: 1;
+}
+#recommend_product li:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+#recommend_product .pro_img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+#recommend_product .pro_dec {
+  margin-left: 110px;
+}
+#recommend_product .pro_dec .title {
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+}
+#recommend_product .pro_dec .title > span {
+  color: #ff6c00;
+}
+#recommend_product .pro_dec .other {
+  margin-top: 5px;
+  width: 100%;
+  float: left;
+  color: #a1a1a1;
+}
+#recommend_product .pro_dec .other .font {
+  float: right;
+  line-height: 20px;
+}
+#recommend_product .pro_dec .other .font i {
+  width: 14px;
+  height: 15px;
+  margin-right: 5px;
+}
+#more_info {
+  width: 100%;
+  text-align: center;
+}
+#more_info .info_one {
+  border: 1px solid #cccccc;
+  margin: 10px;
+  margin-bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+#foot_touming {
+  height: 25px;
+}
+.footer {
+  background-color: #efefef;
+}
+.footer .foot_login {
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  zoom: 1;
+  font-size: 14px;
+}
+.footer .foot_login:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.footer .foot_login a {
+  float: left;
+  line-height: 34px;
+  text-align: center;
+  width: 30%;
+  border-right: 1px solid #cccccc;
+}
+.footer .foot_login a:last-child {
+  width: 40%;
+  text-align: center;
+  float: left;
+  border: none;
+}
+.footer .foot_login a:last-child img {
+  margin-top: 8px;
+  display: inline-block;
+  width: 15px;
+}
+.footer .foot_down {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  padding: 15px 0;
+}
+.footer .foot_down .red_a {
+  color: red;
+}
+.pro_list {
+  border: 1px solid #cccccc;
+  line-height: 38px;
+  background-color: #ebebeb;
+  font-size: 0.675rem;
+  text-indent: 1rem;
+  background: linear-gradient(to bottom, #ffffff, #ebebeb);
+}
+.pro_list .select {
+  float: right;
+  margin-right: 15px;
+  width: 3.1rem;
+  height: 27px;
+  margin-top: 5px;
+  line-height: 27px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #a9a9a9;
+  border-bottom: 1px solid #cccccc;
+  background: linear-gradient(to bottom, #dbdbdb, #fafafa);
+}
+.pro .product_list li {
+  border-bottom: 1px solid #cccccc;
+  padding: 14px 8px;
+  position: relative;
+  zoom: 1;
+}
+.pro .product_list li:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.pro .product_list li .product_img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.pro .product_list li .product_info {
+  margin-left: 110px;
+}
+.pro .product_list li .product_info .tit {
+  font-size: 0.675rem;
+  line-height: 19px;
+  min-height: 44px;
+}
+.pro .product_list li .product_info .price {
+  height: 25px;
+  margin-top: 4px;
+}
+.pro .product_list li .product_info .price em {
+  font-size: 17px;
+  color: red;
+  float: left;
+}
+.pro .product_list li .product_info .other {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.pro .product_list li .product_info .other em {
+  margin-right: 10px;
+}
+.pro .page {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  zoom: 1;
+}
+.pro .page:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.pro .page span {
+  float: left;
+  width: 33.333333%;
+}
+.pro .page span a {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  text-align: center;
+  line-height: 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  background: linear-gradient(to bottom, #f1f1f1, #d4d4d4);
+}
+.pro .page span select {
+  height: 36px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 1px solid #bababa;
+  outline: none;
+}
+.touming {
+  height: 25px;
+  background-color: #f1f1f1;
+}

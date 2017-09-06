@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/bijia.css"/>
+</head>
+<body>
+<!--头部logo区域-->
+<header id="header" class="header">
+    <div class="header_logo" id="header-m">
+        <a href="index.html">
+            <img src="images/header_logo.png" alt=""/>
+        </a>
+    </div>
+    <div class="header_app">
+        <a href="javascriptl:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+
+</header>
+<!--头部搜索框-->
+<section id="header_search">
+    <form action="#" class="form_search">
+        <input type="button" value="搜索"/>
+        <div class="bijia">
+            <input type="search" placeholder="请输入你想比价的商品"/>
+        </div>
+    </form>
+</section>
+<!--导航栏-->
+<section class="biajia_nav">
+    <nav class="bj_list">
+        <p><a href="index.html">首页></a><a href="#" class="a_href">电视></a><a href="#" class="url_two">创维(Skyworth)</a>
+            <a href="#" class="bj_select">筛选</a>
+        </p>
+    </nav>
+    <div class="pro_bijia">
+        <script type="text/html" id="pro_bj">
+            {{each result as value i}}
+        <div class="pro_name">
+           {{value.productName}}
+        </div>
+        <div class="bj_img">
+            {{#value.productImg}}
+        </div>
+            <div class="bj_collect">
+                <a href="javascript:;">
+                    <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="tab">
+                 <ul >
+                    <li class="cur"><a href="#">比价购买</a></li>
+                    <li class="mtab"><a href="#">产品参数</a></li>
+                    <li><a href="#">评价(2322)</a></li>
+                 </ul>
+            </div>
+            {{/each}}
+        </script>
+    </div>
+</section>
+<!--京东商城-->
+<section>
+    <div class="bijia_jd">
+    <script type="text/html" id="pro_des">
+        {{each result as value i}}
+    <a href="redirect.aspx?webid=1&bjid=76069915&tourl=http://item.jd.com/1162187.html&y=bijia" target="_blank">
+        {{#value.bjShop}}
+    </a>
+        {{/each}}
+    </script>
+</div>
+    <div class="note">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+    <div class="pro_com_title">
+        <div>网友评价</div>
+    </div>
+    <!-- 评价-->
+    <div class="pro_com_list">
+        <ul class="bj_say" >
+            <script type="text/html" id="com_say">
+                {{each result as value i}}
+                <li>
+                    <div class="clearfix">
+               <span class="com_name">
+                {{value.comName}}
+               </span>
+               <span class="com_time">
+                  {{value.comTime}}
+               </span>
+                    </div>
+                    <div  class="clearfix">
+                <span class="com_form">
+                    {{value.comFrom}}
+                </span>
+                    </div>
+                    <div class="com_content">
+                        {{value.comContent}}
+                    </div>
+                </li>
+                {{/each}}
+            </script>
+        </ul>
+        <div class="more">
+            <a href="javascript:;" class="morein">查看更多评价</a>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<footer class="footer">
+    <div class="foot_login">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#header-m"><img src="images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <div class="foot_down">
+        <p><a href="javascript:;" class="red_a">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>-- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>
